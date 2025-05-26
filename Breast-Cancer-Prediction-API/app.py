@@ -13,6 +13,3 @@ def index():
         inp = request.form['in']
         return render_template('predict.html', out = main.predict(inp))
     return render_template('search.html')
-
-if __name__ == '__main__':
-    app.run(debug=True)
